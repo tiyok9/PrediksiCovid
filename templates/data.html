@@ -1,0 +1,47 @@
+{% extends 'temp.html' %}
+{% block content %}
+<div class="content-wrapper px-4 py-4 mt-4 ">
+  <div class="card mt-4 shadow ">
+    <div class="card-header">
+      <h1>Dataset</h1>
+    </div>
+    <div class="card-body">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="coll-6">
+            <table id="example" class="table table-striped" style="width:100%">
+              <thead>
+                  <tr>
+                      <th>Date</th>
+                      <th>Kasus</th>
+                  </tr>
+              </thead>
+              <tbody>
+                {% for dat in data %}
+                <tr>
+                  <td>{{dat[0]}}</td>
+                  <td>{{dat[1]}}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+              
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- /.card -->
+  <div class="content-header pt-4">
+    
+  </div>
+  <div class="content px-2">
+    
+  </div>
+</div>
+
+
+
+{% endblock  %}
+    
